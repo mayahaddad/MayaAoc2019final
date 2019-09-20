@@ -11,6 +11,7 @@ public class LogInActivity extends AppCompatActivity implements View.OnClickList
 
     EditText editTextEmail, editTextPassword;
     Button buttonLogIn, buttonSignUp;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
@@ -19,19 +20,25 @@ public class LogInActivity extends AppCompatActivity implements View.OnClickList
 
       buttonLogIn =findViewById(R.id.button);
       buttonLogIn.setOnClickListener(this);
+      buttonSignUp = findViewById(R.id.ButtonSignUp);
+      buttonSignUp.setOnClickListener(this);
+
     }
-
-
-    @Override
-    public void onClick(View v) {
+    public void onClick(View v){
         if(v==buttonLogIn){
-          Intent i = new Intent( this, MainActivity.class);
-                  startActivity(i);
+            if(editTextEmail.getText().toString().equals("")||editTextPassword.getText().toString().equals("")){
 
-        }else{
+            }
+            else{
+                Intent i =new Intent (packageContext this, HomePageActivity.class);
+                i.putExtrea( name: "email",editTextEmail.getText().toString());
+                startActivity(i);
+
 
         }
-
-
     }
+    else{
+            Intent i=new Intent(packageContext: this,HomePageActivity.class);
+            starActivity(i);
+        }
 }

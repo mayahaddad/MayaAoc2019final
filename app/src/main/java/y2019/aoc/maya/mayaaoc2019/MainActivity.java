@@ -2,10 +2,13 @@ package y2019.aoc.maya.mayaaoc2019;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
+    Button buttonSignIn, buttonSignUp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,14 +20,14 @@ public class MainActivity extends AppCompatActivity {
         buttonSignIn.setOnClickListener(this);
         buttonSignUp.setOnClickListener(this);
 
-        buttonSignUp.setOnLongClickListener(this);
+
 
     }
     public void onClick(View v){
         if(v==buttonSignIn){
-            Toast.makeText(this, "sign in", Toast.LENGTH_LOGN).show();
+            Toast.makeText(this, "sign in", Toast.LENGTH_LONG).show();
         }else{
-            Toast.makeText(this, "sign up", Toast.LENGTH_LOGN).show();
+            Toast.makeText(this, "sign up", Toast.LENGTH_LONG).show();
         }
 
 

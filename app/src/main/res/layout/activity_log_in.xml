@@ -30,12 +30,19 @@
         android:padding="25dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonLogin"
         android:layout_width="223dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Button"
-        tools:text="LogIn" />
+        android:text="LogIn" />
+
+    <Button
+        android:id="@+id/buttonSignUp"
+        android:layout_width="223dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:text="Sign Up" />
 
 
 </LinearLayout>

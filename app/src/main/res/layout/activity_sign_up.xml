@@ -1,9 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".SignUpActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <EditText
+        android:id="@+id/editTextMail"
+        android:layout_width="231dp"
+        android:layout_height="wrap_content"
+        android:hint="email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="234dp"
+        android:layout_height="wrap_content"
+
+        android:hint="password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/buttonSignUp2"
+        android:layout_width="166dp"
+        android:layout_height="wrap_content"
+        android:text="SignUp and LogIn"
+        tools:layout_editor_absoluteX="88dp"
+        tools:layout_editor_absoluteY="247dp" />
+
+</LinearLayout>

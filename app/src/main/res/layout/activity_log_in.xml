@@ -5,8 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".LogInActivity">
-
+    android:background="@drawable/mayahaddad"
+    tools:context=".LogInActivity"
+   >
     <EditText
         android:id="@+id/editTextEmail"
         android:layout_width="346dp"
@@ -43,6 +44,7 @@
         android:layout_gravity="center"
 
         android:text="Sign Up" />
+
 
 
 </LinearLayout>

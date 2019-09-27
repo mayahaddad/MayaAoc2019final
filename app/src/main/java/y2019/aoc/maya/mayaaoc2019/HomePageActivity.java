@@ -1,12 +1,13 @@
 package y2019.aoc.maya.mayaaoc2019;
 
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import javax.security.auth.login.LoginException;
 
 public class HomePageActivity extends AppCompatActivity {
 
@@ -42,17 +43,31 @@ public class HomePageActivity extends AppCompatActivity {
 
             case R.id.now:
 
-            goToNextActivity=new Intent(getApplicationContext(),NowActivity.class);
-            startActivity(goToNextActivity);
+                goToNextActivity=new Intent(getApplicationContext(),NowActivity.class);
+                startActivity(goToNextActivity);
 
-               break;
+                break;
 
-            case R.id.LogOut:
+            case R.id.logout:
 
-            goToNextActivity=new Intent(getApplicationContext(),LogInActivity.class);
-            startActivity(goToNextActivity);
+                AlertDialog.Builder builder =new AlertDialog.Builder (this);
+                builder.setMessage("Are you sure?");
+                builder.setCancelable(false);
+                builder.setPositiveButton("YES", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
 
-             break;
+                        Intent goToNextActivity=new Intent(getApplicationContext(),LogInActivity.class);
+                        startActivity(goToNextActivity);
+                    }
+                });
+                builder.setNegativeButton("NO",null);
+                AlertDialog dialog=builder.create();
+                dialog.show();
+
+
+
+                break;
 
         }
         return true;

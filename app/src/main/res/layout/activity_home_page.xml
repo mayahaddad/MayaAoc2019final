@@ -1,9 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/mayahaddad"
     tools:context=".HomePageActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/buttonStartShift"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Shift" />
+
+    <TextView
+        android:id="@+id/textViewShiftTime"
+        android:layout_width="match_parent"
+        android:textColor="#FFFFFF"
+        android:layout_height="wrap_content" />
+</LinearLayout>

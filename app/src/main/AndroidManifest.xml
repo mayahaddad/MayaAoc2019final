@@ -21,7 +21,6 @@
         <activity android:name=".HomePageActivity" />
         <activity android:name=".MyWorkActivity" />
         <activity android:name=".MyShiftsActivity" />
-        <activity android:name=".NowActivity"></activity>
     </application>
 
 </manifest>

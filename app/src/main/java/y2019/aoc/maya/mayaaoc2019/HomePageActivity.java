@@ -60,12 +60,6 @@ public class HomePageActivity extends AppCompatActivity implements View.OnClickL
 
                 break;
 
-            case R.id.now:
-
-                goToNextActivity=new Intent(getApplicationContext(),NowActivity.class);
-                startActivity(goToNextActivity);
-
-                break;
 
             case R.id.logout:
 

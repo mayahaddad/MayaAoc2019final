@@ -9,9 +9,6 @@
         android:id="@+id/myshifts"
         android:title="MyShifts" />
     <item
-        android:id="@+id/now"
-        android:title="Now" />
-    <item
         android:id="@+id/logout"
         android:title="LogOut" />
 </menu>

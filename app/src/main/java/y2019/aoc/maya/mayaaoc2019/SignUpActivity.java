@@ -47,5 +47,6 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
             Intent i = new Intent(this, HomePageActivity.class);
             startActivity(i);
         }
+        
     }
 }

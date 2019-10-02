@@ -11,23 +11,30 @@
     <EditText
         android:id="@+id/editTextMail"
         android:layout_width="231dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_margin="25dp"
-        android:hint="email"
-        android:textColor="#FFFFFF"
-
+        android:hint="Email"
         android:inputType="textEmailAddress"
-        android:padding="25dp" />
+        android:textColor="#FFFFFF" />
 
     <EditText
         android:id="@+id/editText2"
         android:layout_width="229dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
 
         android:layout_margin="25dp"
         android:hint="password"
         android:inputType="textPassword"
-        android:padding="25dp" />
+         />
+
+    <EditText
+        android:id="@+id/editTextConfirmPassword"
+        android:layout_width="231dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:ems="10"
+        android:hint="confirm Password"
+        android:inputType="textPassword" />
 
     <Button
         android:id="@+id/buttonSignUp2"
@@ -35,9 +42,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="25dp"
-        android:padding="25dp"
         android:text="SignUp and LogIn"
-        tools:layout_editor_absoluteX="88dp"
-        tools:layout_editor_absoluteY="247dp" />
+        android:hint="confirm Password" />
 
 </LinearLayout>

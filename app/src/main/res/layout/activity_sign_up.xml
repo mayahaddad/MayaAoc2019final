@@ -5,36 +5,52 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/mayahaddad"
     tools:context=".SignUpActivity">
 
     <EditText
         android:id="@+id/editTextMail"
         android:layout_width="231dp"
         android:layout_height="50dp"
-        android:layout_margin="25dp"
+        android:layout_margin="10dp"
         android:hint="Email"
         android:inputType="textEmailAddress"
-        android:textColor="#FFFFFF" />
+       />
 
     <EditText
         android:id="@+id/editText2"
         android:layout_width="229dp"
         android:layout_height="50dp"
 
-        android:layout_margin="25dp"
+        android:layout_margin="10dp"
         android:hint="password"
-        android:inputType="textPassword"
-         />
+        android:inputType="textPassword" />
 
     <EditText
         android:id="@+id/editTextConfirmPassword"
         android:layout_width="231dp"
         android:layout_height="wrap_content"
-        android:layout_margin="25dp"
+        android:layout_margin="10dp"
         android:ems="10"
         android:hint="confirm Password"
         android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/editTextHourlyWages"
+        android:layout_width="231dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:hint="Hourly wages"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editTextBreak"
+        android:layout_width="231dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:hint="break"
+        android:inputType="number" />
 
     <Button
         android:id="@+id/buttonSignUp2"

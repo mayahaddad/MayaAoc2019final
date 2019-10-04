@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/mayahaddad"
+
     tools:context=".HomePageActivity">
 
     <Button
@@ -17,6 +17,5 @@
     <TextView
         android:id="@+id/textViewShiftTime"
         android:layout_width="match_parent"
-        android:textColor="#FFFFFF"
         android:layout_height="wrap_content" />
 </LinearLayout>

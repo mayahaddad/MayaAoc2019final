@@ -42,7 +42,7 @@ public class LogInActivity extends AppCompatActivity implements View.OnClickList
                 Toast.makeText(this, "Empty username or password", Toast.LENGTH_LONG).show();
             }
             else{
-                Intent i =new Intent (this, HomePageActivity.class);
+                Intent i =new Intent (this,MainActivity.class);
                 i.putExtra("email",editTextEmail.getText().toString());
                 startActivity(i);
 

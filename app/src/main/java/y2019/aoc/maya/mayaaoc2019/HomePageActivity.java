@@ -11,9 +11,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 
 public class HomePageActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -46,19 +43,6 @@ public class HomePageActivity extends AppCompatActivity implements View.OnClickL
         Intent goToNextActivity;
 
         switch(item.getItemId()){
-            case R.id.mywork:
-
-                goToNextActivity=new Intent(getApplicationContext(),MyWorkActivity.class);
-                startActivity(goToNextActivity);
-
-                break;
-
-            case R.id.myshifts:
-
-                goToNextActivity=new Intent(getApplicationContext(),MyShiftsActivity.class);
-                startActivity(goToNextActivity);
-
-                break;
 
 
             case R.id.logout:

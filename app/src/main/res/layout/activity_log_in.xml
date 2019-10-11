@@ -14,7 +14,6 @@
         android:layout_height="wrap_content"
 
         android:layout_margin="25dp"
-        android:ems="10"
         android:hint="email"
         android:inputType="textEmailAddress"
         android:padding="25dp" />
@@ -26,7 +25,6 @@
 
 
         android:layout_margin="25dp"
-        android:ems="10"
         android:hint="password"
         android:inputType="textPassword"
         android:padding="25dp" />

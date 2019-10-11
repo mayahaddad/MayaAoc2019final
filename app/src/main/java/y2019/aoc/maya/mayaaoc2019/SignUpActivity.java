@@ -22,9 +22,11 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         setContentView(R.layout.activity_sign_up);
 
         editTextEmail = findViewById(R.id.editTextEmail);
-        editTextEmail = findViewById(R.id.editTextPassword);
-        editTextEmail = findViewById(R.id.editTextHourlyWages);
-        editTextEmail = findViewById(R.id.editTextBreak);
+        editTextPassword = findViewById(R.id.editTextPassword);
+        editTextHourlyWages= findViewById(R.id.editTextHourlyWages);
+        editTextConfirmPassword=findViewById(R.id.editTextConfirmPassword );
+        editTextBreak = findViewById(R.id.editTextBreak);
+
 
 
 
@@ -35,13 +37,17 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
 
     public void onClick(View v) {
         if (v == buttonSignUp) {
-            if (editTextPassword.getText().toString().equals("") || editTextEmail.getText().toString().equals("")) {
+if((editTextEmail==null) ||(editTextConfirmPassword==null)|| (editTextHourlyWages==null)||(editTextPassword==null)||(editTextBreak==null)){
+    Toast.makeText(this, "somthing is wrong",Toast.LENGTH_LONG).show();
+}
+            if ((editTextPassword.getText().toString().equals("")) || (editTextEmail.getText().toString().equals(""))) { // fe eshe 3'lt
                 Toast.makeText(this, "Empty Email or Password", Toast.LENGTH_LONG).show();
 
             } else {
                 Intent i = new Intent(this, HomePageActivity.class);
                 i.putExtra("Email", editTextEmail.getText().toString());
                 i.putExtra("password", editTextPassword.getText().toString());
+                i.putExtra("password", editTextConfirmPassword.getText().toString());
                 startActivity(i);
             }
 
@@ -49,7 +55,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         } else
 
         {
-            Intent i = new Intent(this, HomePageActivity.class);
+            Intent i = new Intent(this, MainActivity.class);
             startActivity(i);
         }
         if(editTextEmail.getText().toString().equals(""))
@@ -61,6 +67,6 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
             Toast.makeText(this, "confirm password is empty or wrong", Toast.LENGTH_LONG).show();
         }
 
+        }
 
     }
-}

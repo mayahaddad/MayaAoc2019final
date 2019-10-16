@@ -5,10 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".SignUpActivity">
+    tools:context=".SignUpActivity"
+    android:background="@drawable/mayabackground">
 
     <EditText
-        android:id="@+id/editTextMail"
+        android:id="@+id/editTextEmail"
         android:layout_width="231dp"
         android:layout_height="50dp"
         android:layout_margin="10dp"
@@ -41,7 +42,8 @@
         android:layout_margin="10dp"
         android:ems="10"
         android:hint="Hourly wages"
-        android:inputType="number" />
+        android:inputType="number"
+        />
 
     <EditText
         android:id="@+id/editTextBreak"

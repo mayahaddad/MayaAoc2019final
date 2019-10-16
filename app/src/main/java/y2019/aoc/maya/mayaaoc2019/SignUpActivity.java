@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 public class SignUpActivity extends AppCompatActivity implements View.OnClickListener {
 
-    EditText editTextEmail, editTextPassword, editTextConfirmPassword,editTextHourlyWages,editTextBreak;
+    EditText editTextEmail, editTextPassword, editTextConfirmPassword, editTextHourlyWages, editTextBreak;
     Button buttonSignUp;
 
 
@@ -22,11 +22,9 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
 
         editTextEmail = findViewById(R.id.editTextEmail);
         editTextPassword = findViewById(R.id.editTextPassword);
-        editTextHourlyWages= findViewById(R.id.editTextHourlyWages);
-        editTextConfirmPassword=findViewById(R.id.editTextConfirmPassword );
+        editTextHourlyWages = findViewById(R.id.editTextHourlyWages);
+        editTextConfirmPassword = findViewById(R.id.editTextConfirmPassword);
         editTextBreak = findViewById(R.id.editTextBreak);
-
-
 
 
         buttonSignUp = findViewById(R.id.buttonSignUp2);
@@ -36,22 +34,15 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
 
     public void onClick(View v) {
         if (v == buttonSignUp) {
-       /*     if((editTextEmail==null) ||(editTextConfirmPassword==null)|| (editTextHourlyWages==null)||(editTextPassword==null)||(editTextBreak==null)){
-                Toast.makeText(this, "somthing is wrong",Toast.LENGTH_LONG).show();
-            }*/
-            if ((editTextPassword.getText().toString().equals("")) || (editTextEmail.getText().toString().equals(""))) { // fe eshe 3'lt
-                Toast.makeText(this, "Empty Email or Password", Toast.LENGTH_LONG).show();
-
-            } else if(editTextEmail.getText().toString().equals(""))
-            {
-                Toast.makeText(this, "Empty Email",Toast.LENGTH_LONG).show();
+            if ((editTextEmail == null) || (editTextConfirmPassword == null) || (editTextHourlyWages == null) || (editTextPassword == null) || (editTextBreak == null)) {
+                Toast.makeText(this, "somthing is wrong", Toast.LENGTH_LONG).show();
             }
-
-            else if(editTextConfirmPassword.getText().toString().equals("")||!editTextConfirmPassword.getText().toString().equals(editTextPassword)) {
-                Toast.makeText(this, "confirm password is empty or wrong", Toast.LENGTH_LONG).show();
-            }else
-                {
-                Intent i = new Intent(this, HomePageActivity.class);
+            if ((editTextPassword.getText().toString().equals("")) || (editTextEmail.getText().toString().equals(""))) {
+                Toast.makeText(this, "Empty Email or Password", Toast.LENGTH_LONG).show();
+            } /*else if (!editTextConfirmPassword.getText().toString().equals(editTextPassword)) {
+                    Toast.makeText(this, "confirm password is empty or wrong", Toast.LENGTH_LONG).show();
+                } */else {
+                Intent i = new Intent(this, MainActivity.class);
                 i.putExtra("Email", editTextEmail.getText().toString());
                 i.putExtra("password", editTextPassword.getText().toString());
                 i.putExtra("password", editTextConfirmPassword.getText().toString());

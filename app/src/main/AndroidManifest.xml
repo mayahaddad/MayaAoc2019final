@@ -21,7 +21,9 @@
         <activity android:name=".MyWorkActivity" />
         <activity android:name=".MyShiftsActivity" />
         <activity android:name=".HomeActivity" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".MyShiftsListActivity" />
+        <activity android:name=".ListActivity"></activity>
     </application>
 
 </manifest>

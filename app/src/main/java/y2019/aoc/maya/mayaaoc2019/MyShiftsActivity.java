@@ -18,6 +18,13 @@ public class MyShiftsActivity extends AppCompatActivity {
     ListView shiftList;
     CustomAdapter2 adapter2;
 
+
+
+
+
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

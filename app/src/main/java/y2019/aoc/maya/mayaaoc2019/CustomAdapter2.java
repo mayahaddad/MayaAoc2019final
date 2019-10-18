@@ -6,17 +6,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-
 import android.widget.TextView;
-
-
 import java.util.List;
 
 /**
  * Created by Sarah on 9/20/2017.
  * this page contains the custom galley that extends
  */
-
 public class CustomAdapter2 extends ArrayAdapter<Shifts> {
 
     private int resourceLayout;
@@ -27,7 +23,6 @@ public class CustomAdapter2 extends ArrayAdapter<Shifts> {
         this.resourceLayout = resource;
         this.mContext = context;
     }
-
     /*
     getView() method. This view is called when a listItem needs to be created and populated with the data.In this method first the View is inflated using the LayoutInflator.inflate() method. It is important that you check that if the view you are trying to inflate is new or reused
      */
@@ -50,7 +45,6 @@ public class CustomAdapter2 extends ArrayAdapter<Shifts> {
 
             TextView textViewEnd = v.findViewById(R.id.textViewEnd);
             textViewEnd.setText(p.getEndingHour().toString());
-
 
 
             TextView textViewWage = v.findViewById(R.id.textViewWage);

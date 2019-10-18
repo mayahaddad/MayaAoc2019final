@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".LogInActivity"
-   android:background="@drawable/mayabackground"
+
    >
 
     <EditText
@@ -35,16 +35,19 @@
         android:layout_width="223dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:background="@drawable/login_button"
         android:text="LogIn"
-        />
+        android:textColor="#FFFFFF" />
 
     <Button
         android:id="@+id/buttonSignUp"
         android:layout_width="223dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-
-        android:text="Sign Up" />
+        android:layout_margin="25dp"
+        android:background="@drawable/login_button"
+        android:text="Sign Up"
+        android:textColor="#FFFFFF" />
 
 
 

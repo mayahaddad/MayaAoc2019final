@@ -7,27 +7,33 @@
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".MainActivity"
-    android:background="@drawable/mayabackground">
+    >
 
     <Button
         android:id="@+id/buttonNow"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:text="Now" />
+        android:layout_margin="25dp"
+        android:background="@drawable/main_buttons"
+        android:text="Now"
+        android:textColor="#FFFFFF" />
 
     <Button
         android:id="@+id/buttonMyShifts"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:text="My Shifts" />
+        android:layout_margin="25dp"
+        android:background="@drawable/main_buttons"
+        android:text="My Shifts"
+        android:textColor="#FFFFFF" />
 
     <Button
         android:id="@+id/buttonWorkSettings"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:text="Work Settings" />
+        android:layout_margin="25dp"
+        android:background="@drawable/main_buttons"
+        android:text="Work Settings"
+        android:textColor="#FFFFFF" />
 
 </LinearLayout>

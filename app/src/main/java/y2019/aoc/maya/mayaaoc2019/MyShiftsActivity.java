@@ -1,7 +1,11 @@
 package y2019.aoc.maya.mayaaoc2019;
 
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.widget.ListView;
 
 
@@ -22,11 +26,8 @@ public class MyShiftsActivity extends AppCompatActivity {
         shifts = new ArrayList<>();
         shifts.add(new Shifts(new Date(),"13:00","20:00","456"));
         shifts.add(new Shifts(new Date(),"13:00","20:00","456"));
-
         shifts.add(new Shifts(new Date(),"13:00","20:00","555"));
-
         shifts.add(new Shifts(new Date(),"13:00","20:00","456"));
-
         shifts.add(new Shifts(new Date(),"13:00","20:00","456"));
 
 

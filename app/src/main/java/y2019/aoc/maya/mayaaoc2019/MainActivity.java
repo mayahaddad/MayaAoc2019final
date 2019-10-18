@@ -16,11 +16,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         buttonNow = findViewById(R.id.buttonNow);
         buttonNow.setOnClickListener(this);
+
+        buttonMyShifts = findViewById(R.id.buttonMyShifts);
+        buttonMyShifts.setOnClickListener(this);
     }
 
     public void onClick (View v){
         if (v==buttonNow){
             Intent goToNextActivity=new Intent(this,HomePageActivity.class);
+            startActivity( goToNextActivity);
+        }else if(v == buttonMyShifts){
+            Intent goToNextActivity=new Intent(this,MyShiftsActivity.class);
             startActivity( goToNextActivity);
         }
     }

@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".LogInActivity"
+    android:background="@drawable/mayabackground"
 
    >
 
@@ -47,6 +48,11 @@
         android:text="Sign Up"
         android:textColor="#FFFFFF" />
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="172dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/worklogo" />
 
 
 </LinearLayout>

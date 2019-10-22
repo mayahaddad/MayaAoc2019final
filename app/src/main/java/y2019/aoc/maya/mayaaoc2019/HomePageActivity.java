@@ -2,6 +2,7 @@ package y2019.aoc.maya.mayaaoc2019;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.support.v7.app.AlertDialog;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -77,14 +78,16 @@ public class HomePageActivity extends AppCompatActivity implements View.OnClickL
             startTime = System.currentTimeMillis();
             startShift.setText("Stop Shift");
             isStarted = true;
-        }else{
+        }else {
             stopTime = System.currentTimeMillis();
             startShift.setText("Start Shift");
             isStarted = false;
 
-            tvTotalTime.setText("Worked Minutes: " +((stopTime-startTime)/1000/60));
+            tvTotalTime.setText("Worked Minutes: " + ((stopTime - startTime) / 1000 / 60));
 
 
+            Intent i=new Intent( this,MyShiftsActivity.class);
+            startActivity(i);
         }
 
     }

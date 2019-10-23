@@ -37,5 +37,22 @@ public class MyShiftsActivity extends AppCompatActivity {
         adapter2 = new CustomAdapter2(this, R.layout.shift_item, shifts);
         shiftList.setAdapter(adapter2);
     }
+    public boolean onCreateOptionsMenu(Menu menu ){
+        getMenuInflater().inflate(R.menu.addmenu,menu);
+        return true;
+    }
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        switch (item.getItemId()) {
+
+            case R.id.addshift:
+
+
+
+                break;
+
+        }
+        return true;
+    }
 
 }

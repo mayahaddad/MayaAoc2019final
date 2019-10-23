@@ -35,43 +35,6 @@ public class HomePageActivity extends AppCompatActivity implements View.OnClickL
     }
 
 
-
-    public boolean onCreateOptionsMenu(Menu menu ){
-        getMenuInflater().inflate(R.menu.menu,menu);
-        return true;
-    }
-    public boolean onOptionsItemSelected(MenuItem item){
-        Intent goToNextActivity;
-
-        switch(item.getItemId()){
-
-
-            case R.id.logout:
-
-                AlertDialog.Builder builder =new AlertDialog.Builder (this);
-                builder.setMessage("Are you sure?");
-                builder.setCancelable(false);
-                builder.setPositiveButton("YES", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-
-                        Intent goToNextActivity=new Intent(getApplicationContext(),LogInActivity.class);
-                        startActivity(goToNextActivity);
-                    }
-                });
-                builder.setNegativeButton("NO",null);
-                AlertDialog dialog=builder.create();
-                dialog.show();
-
-
-
-                break;
-
-        }
-        return true;
-
-    }
-
     @Override
     public void onClick(View v) {
         if(!isStarted) {

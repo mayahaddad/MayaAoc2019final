@@ -46,11 +46,13 @@ public class MyShiftsActivity extends AppCompatActivity {
         switch (item.getItemId()) {
 
             case R.id.addshift:
-                
 
 
+                Intent goToNextActivity = new Intent(getApplicationContext(),DateTimeActivity.class);
+                startActivity(goToNextActivity);
 
                 break;
+
 
         }
         return true;

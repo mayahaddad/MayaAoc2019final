@@ -20,12 +20,11 @@
             android:layout_weight="1"
             android:text="DateText" />
 
-        <Button
+        <ImageButton
             android:id="@+id/DateButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Button" />
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/calen" />
 
     </LinearLayout>
 
@@ -41,11 +40,10 @@
             android:layout_weight="1"
             android:text="TimeText" />
 
-        <Button
+        <ImageButton
             android:id="@+id/TimeButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Button" />
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/alarm" />
     </LinearLayout>
 </LinearLayout>

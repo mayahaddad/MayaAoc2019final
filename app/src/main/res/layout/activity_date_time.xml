@@ -17,10 +17,12 @@
         <TextView
             android:id="@+id/DateText"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="38dp"
             android:layout_margin="50dp"
             android:layout_weight="1"
-            android:text="DateText" />
+            android:text="Date"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black" />
 
         <ImageButton
             android:id="@+id/DateButton"
@@ -33,7 +35,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <TextView
@@ -42,7 +44,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="50dp"
             android:layout_weight="1"
-            android:text="TimeText" />
+            android:text="startTime"
+            android:textColor="@android:color/black" />
 
         <ImageButton
             android:id="@+id/TimeButton"
@@ -50,5 +53,29 @@
             android:layout_height="50dp"
             android:layout_margin="50dp"
             app:srcCompat="@drawable/alarm" />
+
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/Time2Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="50dp"
+            android:layout_weight="1"
+            android:text="stopTime"
+            android:textColor="@android:color/black" />
+
+        <ImageButton
+            android:id="@+id/Time2Button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="50dp"
+            app:srcCompat="@drawable/alarm" />
+    </LinearLayout>
+
 </LinearLayout>

@@ -12,6 +12,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.Date;
+
 
 public class HomePageActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -22,6 +28,7 @@ public class HomePageActivity extends AppCompatActivity implements View.OnClickL
     boolean isStarted = false;
     TextView tvTotalTime;
 
+    final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,6 +54,7 @@ public class HomePageActivity extends AppCompatActivity implements View.OnClickL
             isStarted = false;
 
             tvTotalTime.setText("Worked Minutes: " + ((stopTime - startTime) / 1000 / 60));
+            Shifts shifts = new Shifts(new Date(), startTime, stopTime, 70);
 
 
             Intent i=new Intent( this,MyShiftsActivity.class);

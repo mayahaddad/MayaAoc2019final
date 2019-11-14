@@ -4,25 +4,25 @@ import java.util.Date;
 
 public class Shifts {
     private Date date;
-    private String startingHour;
-    private String endingHour;
-    private String totalWage;
+    private long startingHour;
+    private long endingHour;
+    private double totalWage;
 
-    public Shifts() {
+    public Shifts(Date date, String s, String s1, String s2) {
     }
 
-    public Shifts (Date date, String startingHour, String endingHour, String totalWage){
+    public Shifts (Date date, long startingHour, long endingHour, double totalWage){
         this.date=date;
         this.startingHour=startingHour;
         this.endingHour=endingHour;
         this.totalWage=totalWage;
     }
 
-    public String getStartingHour() {
+    public long getStartingHour() {
         return startingHour;
     }
 
-    public void setStartingHour(String startingHour) {
+    public void setStartingHour(long startingHour) {
         this.startingHour = startingHour;
     }
 
@@ -35,20 +35,20 @@ public class Shifts {
         this.date = date;
     }
 
-    public String getTotalWage() {
+    public double getTotalWage() {
         return totalWage;
     }
 
-    public void setTotalWage(String totalWage) {
+    public void setTotalWage(double totalWage) {
         this.totalWage = totalWage;
     }
 
-    public String getEndingHour() {
+    public long getEndingHour() {
 
         return endingHour;
     }
 
-    public void setEndingHour(String endingHour) {
+    public void setEndingHour(long endingHour) {
         this.endingHour = endingHour;
     }
 }

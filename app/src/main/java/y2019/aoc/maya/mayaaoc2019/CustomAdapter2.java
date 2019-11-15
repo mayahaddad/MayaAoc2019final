@@ -41,14 +41,14 @@ public class CustomAdapter2 extends ArrayAdapter<Shifts> {
             textViewDate.setText(p.getDate().toString());
 
             TextView textViewStart = v.findViewById(R.id.textViewStart);
-            textViewStart.setText(p.getStartingHour().toString());
+            textViewStart.setText(p.getStartingHour()+"");
 
             TextView textViewEnd = v.findViewById(R.id.textViewEnd);
-            textViewEnd.setText(p.getEndingHour().toString());
+            textViewEnd.setText(p.getEndingHour()+"");
 
 
             TextView textViewWage = v.findViewById(R.id.textViewWage);
-            textViewWage.setText(p.getTotalWage().toString());
+            textViewWage.setText(p.getTotalWage()+"");
 
 
 

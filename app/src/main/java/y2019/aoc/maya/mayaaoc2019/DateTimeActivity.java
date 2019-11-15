@@ -1,26 +1,19 @@
 package y2019.aoc.maya.mayaaoc2019;
 
-import android.annotation.SuppressLint;
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
-import android.media.Image;
-import android.media.TimedText;
+
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.view.textclassifier.TextClassification;
-import android.widget.Button;import android.widget.Toast;
 
 import android.widget.DatePicker;
-import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.TimePicker;
 
 import java.util.Calendar;
 
-import static y2019.aoc.maya.mayaaoc2019.R.id.DateButton;
 
 
 public class DateTimeActivity extends AppCompatActivity implements View.OnClickListener{

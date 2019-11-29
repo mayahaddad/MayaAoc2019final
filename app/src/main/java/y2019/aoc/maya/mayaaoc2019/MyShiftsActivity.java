@@ -24,15 +24,14 @@ public class MyShiftsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_shifts);
-        shifts.add(new Shifts(new Date(), "13:00", "20:00", "456"));
 
         shifts = new ArrayList<>();
-        shifts.add(new Shifts(new Date(), "13:00", "20:00", "456"));
+        /*shifts.add(new Shifts(new Date(), "13:00", "20:00", "456"));
         shifts.add(new Shifts(new Date(), "13:00", "20:00", "456"));
         shifts.add(new Shifts(new Date(), "13:00", "20:00", "555"));
         shifts.add(new Shifts(new Date(), "13:00", "20:00", "456"));
-
-
+        shifts.add(new Shifts(new Date(), "13:00", "20:00", "456"));
+*/
         shiftList = findViewById(R.id.ShiftListView);
         adapter2 = new CustomAdapter2(this, R.layout.shift_item, shifts);
         shiftList.setAdapter(adapter2);

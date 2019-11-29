@@ -54,7 +54,7 @@ public class HomePageActivity extends AppCompatActivity implements View.OnClickL
             isStarted = false;
 
             tvTotalTime.setText("Worked Minutes: " + ((stopTime - startTime) / 1000 / 60));
-            Shifts shifts = new Shifts(new Date(), startTime, stopTime, 70);
+        //    Shifts shifts = new Shifts(new Date(), startTime, stopTime, 70);
 
 
             Intent i=new Intent( this,MyShiftsActivity.class);

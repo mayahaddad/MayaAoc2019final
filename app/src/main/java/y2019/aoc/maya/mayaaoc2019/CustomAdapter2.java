@@ -38,7 +38,7 @@ public class CustomAdapter2 extends ArrayAdapter<Shifts> {
         if(p != null){
 
             TextView textViewDate = v.findViewById(R.id.textViewDate);
-            textViewDate.setText(p.getDate().toString());
+        //    textViewDate.setText(p.getDate().toString());
 
             TextView textViewStart = v.findViewById(R.id.textViewStart);
             textViewStart.setText(p.getStartingHour()+"");

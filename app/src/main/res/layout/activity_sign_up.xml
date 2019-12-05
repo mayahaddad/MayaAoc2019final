@@ -36,25 +36,6 @@
         android:hint="confirm Password"
         android:inputType="textPassword" />
 
-    <EditText
-        android:id="@+id/editTextHourlyWages"
-        android:layout_width="231dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:ems="10"
-        android:hint="Hourly wages"
-        android:inputType="number"
-        />
-
-    <EditText
-        android:id="@+id/editTextBreak"
-        android:layout_width="231dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:ems="10"
-        android:hint="break"
-        android:inputType="number" />
-
     <Button
         android:id="@+id/buttonSignUp2"
         android:layout_width="166dp"

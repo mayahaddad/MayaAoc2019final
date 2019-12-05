@@ -8,4 +8,21 @@
     android:background="@drawable/backkg"
     tools:context=".MyWorkActivity">
 
+
+    <EditText
+        android:id="@+id/hourlyWagetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="hourlyWage"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/breakTimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="breakTime"
+        android:inputType="time" />
+
 </LinearLayout>

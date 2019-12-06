@@ -37,7 +37,7 @@ public class HomePageActivity extends AppCompatActivity implements View.OnClickL
         startShift = findViewById(R.id.buttonStartShift);
         startShift.setOnClickListener(this);
 
-        tvTotalTime = findViewById(R.id.textViewShiftTime);
+        //tvTotalTime = findViewById(R.id.textViewShiftTime);
 
     }
 

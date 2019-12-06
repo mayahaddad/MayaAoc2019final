@@ -14,7 +14,7 @@
         android:id="@+id/buttonNow"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="25dp"
+        android:layout_margin="30dp"
         android:background="@drawable/main_buttons"
         android:text="Now"
         android:textColor="#FFFFFF" />
@@ -23,7 +23,7 @@
         android:id="@+id/buttonMyShifts"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="25dp"
+        android:layout_margin="30dp"
         android:background="@drawable/main_buttons"
         android:text="My Shifts"
         android:textColor="#FFFFFF" />
@@ -32,7 +32,7 @@
         android:id="@+id/buttonWorkSettings"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="25dp"
+        android:layout_margin="30dp"
         android:background="@drawable/main_buttons"
         android:text="Work Settings"
         android:textColor="#FFFFFF" />

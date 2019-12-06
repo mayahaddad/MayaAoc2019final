@@ -11,20 +11,18 @@
 
     <Button
         android:id="@+id/buttonStartShift"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="173dp"
+        android:layout_height="173dp"
         android:layout_gravity="center_vertical"
         android:layout_margin="125dp"
-        android:text="Start Shift"
         android:background="@drawable/home_button"
+        android:text="Start Shift"
         android:textColor="#FFFFFF" />
 
-    <TextView
-        android:id="@+id/textViewShiftTime"
-        android:layout_width="255dp"
-        android:layout_height="57dp"
-        android:layout_gravity="center_vertical"
-        android:layout_margin="50dp"
-        android:layout_marginEnd="25dp" />
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="241dp"
+        app:srcCompat="@drawable/mayaback" />
 
 </LinearLayout>

@@ -13,6 +13,7 @@
         android:id="@+id/hourlyWagetext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="25dp"
         android:ems="10"
         android:hint="hourlyWage"
         android:inputType="number" />
@@ -21,6 +22,7 @@
         android:id="@+id/breakTimeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="25dp"
         android:ems="10"
         android:hint="breakTime"
         android:inputType="time" />

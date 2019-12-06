@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="y2019.aoc.maya.mayaaoc2019">
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -21,7 +22,7 @@
         <activity android:name=".HomePageActivity" />
         <activity android:name=".MyWorkActivity" />
         <activity android:name=".MyShiftsActivity" />
-        <activity android:name=".HomeActivity" />
+
         <activity android:name=".MainActivity" />
         <activity android:name=".MyShiftsListActivity" />
         <activity android:name=".ListActivity" />

@@ -1,5 +1,7 @@
 package y2019.aoc.maya.mayaaoc2019;
 
+import java.util.Date;
+
 public class Shifts {
     private int day;
     private int month;
@@ -8,7 +10,7 @@ public class Shifts {
     private long endingHour;
     private double totalWage;
 
-    public Shifts() {
+    public Shifts(Date date, String s, String s1, String s2) {
     }
 
     public Shifts(int day, int month, int year, long startingHour, long endingHour, double totalWage) {

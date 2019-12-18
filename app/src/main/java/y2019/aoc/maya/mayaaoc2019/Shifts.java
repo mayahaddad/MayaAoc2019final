@@ -1,6 +1,5 @@
 package y2019.aoc.maya.mayaaoc2019;
 
-import java.util.Date;
 
 public class Shifts {
     private int day;
@@ -10,7 +9,7 @@ public class Shifts {
     private long endingHour;
     private double totalWage;
 
-    public Shifts(Date date, String s, String s1, String s2) {
+    public Shifts() {
     }
 
     public Shifts(int day, int month, int year, long startingHour, long endingHour, double totalWage) {
@@ -20,14 +19,6 @@ public class Shifts {
         this.startingHour = startingHour;
         this.endingHour = endingHour;
         this.totalWage = totalWage;
-    }
-
-    public long getStartingHour() {
-        return startingHour;
-    }
-
-    public void setStartingHour(long startingHour) {
-        this.startingHour = startingHour;
     }
 
     public int getDay() {
@@ -54,22 +45,27 @@ public class Shifts {
         this.year = year;
     }
 
+    public long getStartingHour() {
+        return startingHour;
+    }
+
+    public void setStartingHour(long startingHour) {
+        this.startingHour = startingHour;
+    }
+
+    public long getEndingHour() {
+        return endingHour;
+    }
+
+    public void setEndingHour(long endingHour) {
+        this.endingHour = endingHour;
+    }
+
     public double getTotalWage() {
         return totalWage;
     }
 
     public void setTotalWage(double totalWage) {
         this.totalWage = totalWage;
-    }
-
-    public long getEndingHour() {
-
-        return endingHour;
-    }
-    public void calculateTotalWaget(){
-
-    }
-    public void setEndingHour(long endingHour) {
-        this.endingHour = endingHour;
     }
 }

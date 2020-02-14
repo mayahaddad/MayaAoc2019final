@@ -8,7 +8,7 @@
     tools:context=".LogInActivity"
     android:background="@drawable/backkg"
 
-   >
+    >
 
     <EditText
         android:id="@+id/editTextEmail"
@@ -16,43 +16,43 @@
         android:layout_height="wrap_content"
 
         android:layout_margin="30dp"
-        android:hint="email"
-        android:inputType="textEmailAddress"
-        android:padding="25dp" />
+    android:hint="email"
+    android:inputType="textEmailAddress"
+    android:padding="25dp" />
 
-    <EditText
-        android:id="@+id/editTextPassword"
-        android:layout_width="343dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="30dp"
-        android:hint="password"
-        android:inputType="textPassword"
-        android:padding="25dp" />
+<EditText
+android:id="@+id/editTextPassword"
+android:layout_width="343dp"
+android:layout_height="wrap_content"
+android:layout_margin="30dp"
+android:hint="password"
+android:inputType="textPassword"
+android:padding="25dp" />
 
-    <Button
-        android:id="@+id/buttonLogin"
-        android:layout_width="223dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:background="@drawable/login_button"
-        android:text="LogIn"
-        android:textColor="#FFFFFF" />
+<Button
+android:id="@+id/buttonLogin"
+android:layout_width="223dp"
+android:layout_height="wrap_content"
+android:layout_gravity="center"
+android:background="@drawable/login_button"
+android:text="LogIn"
+android:textColor="#FFFFFF" />
 
-    <Button
-        android:id="@+id/buttonSignUp"
-        android:layout_width="223dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="10dp"
-        android:background="@drawable/login_button"
-        android:text="Sign Up"
-        android:textColor="#FFFFFF" />
+<Button
+android:id="@+id/buttonSignUp"
+android:layout_width="223dp"
+android:layout_height="wrap_content"
+android:layout_gravity="center"
+android:layout_margin="10dp"
+android:background="@drawable/login_button"
+android:text="Sign Up"
+android:textColor="#FFFFFF" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="172dp"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/worklogo" />
+<ImageView
+android:id="@+id/imageView"
+android:layout_width="172dp"
+android:layout_height="wrap_content"
+app:srcCompat="@drawable/worklogo" />
 
 
-</LinearLayout>
+    </LinearLayout>

@@ -23,6 +23,6 @@
         android:id="@+id/image"
         android:layout_width="wrap_content"
         android:layout_height="241dp"
-        app:srcCompat="@drawable/mayaback" />
+       />
 
 </LinearLayout>

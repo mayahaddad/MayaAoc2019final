@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "999664271171",
+    "firebase_url": "https://mayaaoc2019.firebaseio.com",
+    "project_id": "mayaaoc2019",
+    "storage_bucket": "mayaaoc2019.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:999664271171:android:840ef0f327f76d6f98b9f6",
+        "android_client_info": {
+          "package_name": "y2019.aoc.maya.mayaaoc2019"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "999664271171-fll4b38qo6kncksj813tl6cf849in4c4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "y2019.aoc.maya.mayaaoc2019",
+            "certificate_hash": "090b37ae54543232e42d4a8a51221c2a9a993f6a"
+          }
+        },
+        {
+          "client_id": "999664271171-dviafid5k1o6f22j3h1nihkm0rd2l577.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC15cFCcVwJj5p5RZHfZwqnQJTQmlX9-uU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "999664271171-dviafid5k1o6f22j3h1nihkm0rd2l577.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

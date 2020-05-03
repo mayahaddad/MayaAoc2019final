@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/backkg"
+    android:background="@drawable/backgr1"
     tools:context=".MyWorkActivity">
 
 
@@ -26,5 +26,14 @@
         android:ems="10"
         android:hint="breakTime"
         android:inputType="time" />
+
+    <Button
+        android:id="@+id/donebutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_button"
+        android:textColor="#FFFFFF"
+        android:layout_margin="25dp"
+        android:text="Done" />
 
 </LinearLayout>

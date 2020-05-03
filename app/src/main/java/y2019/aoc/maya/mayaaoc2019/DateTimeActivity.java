@@ -3,6 +3,7 @@ package y2019.aoc.maya.mayaaoc2019;
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -128,8 +129,9 @@ public class DateTimeActivity extends AppCompatActivity implements View.OnClickL
         }
         if(v == addShiftButton){
 
-
                 myRef.push().setValue(new Shifts(day, month, year1, startingHour, endingHour, totalWage));
+             Intent i=new Intent( this,MyShiftsActivity.class);
+            startActivity(i);
         }
     }
 }

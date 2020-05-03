@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".SignUpActivity"
-    android:background="@drawable/backkg"
+    android:background="@drawable/backgr1"
    >
 
     <EditText
@@ -27,14 +27,42 @@
         android:hint="password"
         android:inputType="textPassword" />
 
-    <EditText
-        android:id="@+id/editTextConfirmPassword"
-        android:layout_width="231dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:ems="10"
-        android:hint="confirm Password"
-        android:inputType="textPassword" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="156dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageView"
+            android:layout_width="165dp"
+            android:layout_height="134dp"
+            app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btGallery"
+                android:layout_width="181dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/login_button"
+                android:text="gallery"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btTakePhot"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/login_button"
+                android:text="camera"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+    </LinearLayout>
 
     <Button
         android:id="@+id/buttonSignUp2"
@@ -42,9 +70,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="25dp"
-        android:text="SignUp and LogIn"
         android:background="@drawable/login_button"
-        android:textColor="#FFFFFF"
-        android:hint="confirm Password" />
+        android:text="SignUp and LogIn"
+        android:textColor="#FFFFFF" />
 
 </LinearLayout>

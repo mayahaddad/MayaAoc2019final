@@ -27,6 +27,33 @@
         android:hint="breakTime"
         android:inputType="time" />
 
+    <EditText
+        android:id="@+id/extraHoursText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:ems="10"
+        android:hint="extraHours"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/travelAllowanceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:ems="10"
+        android:hint="travelAllowance"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/holidaysAndSaturdaysText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:ems="10"
+        android:hint="holidaysAndSaturdays"
+        android:inputType="number" />
+
     <Button
         android:id="@+id/donebutton"
         android:layout_width="match_parent"
